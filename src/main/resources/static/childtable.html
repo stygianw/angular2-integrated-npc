@@ -1,0 +1,7 @@
+<span *ngIf="isLoading">Loading data...</span>
+<table [style.color]="isLoading ? 'grey' : 'black'">
+	<tr *ngFor="let name of data">
+		<td>{{name.name}}</td>
+		<td>{{name.surname}}</td>
+	</tr>
+</table>

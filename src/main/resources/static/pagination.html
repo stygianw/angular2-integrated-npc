@@ -1,0 +1,6 @@
+<div>
+	<a href="#" *ngFor="let page of pages" (click)="selectedPage = page">{{page}}</a>
+</div>
+<div>
+	<child-table [page]="selectedPage"></child-table>	
+</div>
